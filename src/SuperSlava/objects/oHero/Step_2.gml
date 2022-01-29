@@ -1,4 +1,6 @@
-/// @description SHADOW BIRTH
+/// @description ANY BUFFS CHANGING 
+
+//WEED PART
 
 if weed && ((get_timer() mod 2) == 1)
 {
