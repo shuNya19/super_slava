@@ -29,5 +29,6 @@ if (blunt_used == true)
 
 if (oHero.drug)
 {
-	x = x + random_range(-(oHero.drug_timer/200), (oHero.drug_timer/200));
+	var sep = oHero.drug_max / 3
+	x = x + random_range(-(oHero.drug_timer/sep), (oHero.drug_timer/sep));
 }

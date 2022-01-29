@@ -3,7 +3,8 @@
 
 if (oHero.drug)
 {
-	draw_set_alpha(1.44 - (720-oHero.drug_timer)/500)
+	sep = oHero.drug_max / 1.5
+	draw_set_alpha(1.5 - (oHero.drug_max-oHero.drug_timer) / sep)
 	draw_sprite(sCameraDrug, 0, x+random_range(-6,6),y)
 	draw_set_alpha(1)
 }
