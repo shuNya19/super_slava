@@ -24,3 +24,10 @@ if (blunt_used == true)
 	camera_set_view_angle(cam, sin(A/13)*5)
 	A += 1
 }
+
+// DRUG 
+
+if (oHero.drug)
+{
+	x = x + random_range(-(oHero.drug_timer/200), (oHero.drug_timer/200));
+}

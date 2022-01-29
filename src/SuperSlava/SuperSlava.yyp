@@ -30,6 +30,7 @@
     {"id":{"name":"sHeroIdle","path":"sprites/sHeroIdle/sHeroIdle.yy",},"order":1,},
     {"id":{"name":"oeCharged","path":"objects/oeCharged/oeCharged.yy",},"order":14,},
     {"id":{"name":"seLanding","path":"sprites/seLanding/seLanding.yy",},"order":8,},
+    {"id":{"name":"sCameraDrug","path":"sprites/sCameraDrug/sCameraDrug.yy",},"order":21,},
     {"id":{"name":"seRunStart","path":"sprites/seRunStart/seRunStart.yy",},"order":10,},
     {"id":{"name":"oeLanding","path":"objects/oeLanding/oeLanding.yy",},"order":6,},
     {"id":{"name":"Ground","path":"tilesets/Ground/Ground.yy",},"order":0,},
