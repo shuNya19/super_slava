@@ -1,0 +1,10 @@
+Font f_std has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\f_std\f_std.gms1.png
+Converting GML script: ${project_dir}\objects\o_back\Create_0.gml
+Converted string - line 1: 'u_Distance' -> "u_Distance"
+Converted string - line 6: 'Press space to turn on/off the shader.#' -> "Press space to turn on/off the shader.#"
+Converted string - line 7: 'Press Left or Right to change the distance.' -> "Press Left or Right to change the distance."
+
+Added compatibility script 'background/draw_background.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script '__init_global.gml'
