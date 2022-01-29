@@ -15,5 +15,5 @@ if weed && ((get_timer() mod 2) == 1)
 	}
 }
 
-if (weed_timer = 1) {weed = false; walksp = walksp*2}
+if (weed_timer = 1) {weed = false; walksp = walksp*2; instance_destroy(oeCharged)}
 if (weed_timer != 0) {weed_timer = weed_timer - 1}
