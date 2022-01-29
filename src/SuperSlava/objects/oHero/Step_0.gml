@@ -29,13 +29,27 @@ x = x + hsp;
 
 if (place_meeting(x, y+vsp, oWall))
 {
-	var check = instance_place(x, y+vsp, oBlock)
+	var check_block = instance_place(x, y+vsp, oBlock)
+	var check_secret = instance_place(x, y+vsp, oSecret)
+	
+	
+	// GETTING CLOSE
 	while (!place_meeting(x, y+sign(vsp), oWall))
 	{
 		y = y + sign(vsp);
 	}
 	vsp = 0;
-	if ((check != noone) and (check.y < y)) {instance_destroy(check)}
+	
+	
+	// CHECK DESTROYING BLOCKS
+	if ((check_block != noone) and (check_block.y < y))
+	{
+		instance_destroy(check_block)
+	}
+	if ((check_secret != noone) and (check_secret.y < y)) 
+	{
+		check_secret.breaking = true; check_secret.jump = 2
+	}
 }
 
 y = y + vsp;

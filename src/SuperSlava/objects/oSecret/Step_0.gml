@@ -2,15 +2,6 @@
 
 if (broke == false)
 {
-	with oHero
-	{
-		if (place_meeting(x,y+vsp,other)) and (y > other.y)
-		{
-			other.breaking = true
-			other.jump = 2
-		}
-	}
-
 	if (breaking == true)
 	{
 		y = y - jump
