@@ -25,10 +25,25 @@ if (blunt_used == true)
 	A += 1
 }
 
+if layer_exists("Trees") and layer_exists("Hills")
+{
+	layer_x("Hills", x/3)
+	layer_x("Trees", x/2)	
+}
+
 // DRUG 
 
+// shaking
 if (oHero.drug)
 {
 	var sep = oHero.drug_max / 3
 	x = x + random_range(-(oHero.drug_timer/sep), (oHero.drug_timer/sep));
 }
+
+// zoom
+//if oHero.drug_timer == oHero.drug_max-1
+//{
+//	camera_set_view_size(cam, camera_get_view_width(cam)*0.75, camera_get_view_height(cam)*0.75)
+//	view_w_half = camera_get_view_width(cam)*0.5
+//	view_h_half = camera_get_view_height(cam)*0.5
+//}

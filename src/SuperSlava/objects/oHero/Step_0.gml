@@ -10,7 +10,7 @@ vsp = vsp + grv;
 
 if (place_meeting(x, y+1, oWall)) && (key_jump)
 {
-	vsp = -8;
+	vsp = jump_max;
 	audio_play_sound(snJump,10,false)
 	instance_create_layer(x,bbox_bottom,"Particles",oeJump)
 }
@@ -70,7 +70,8 @@ else
 		audio_sound_pitch(snLanding, choose(0.6,0.8,1,1.2,1.4))
 		audio_play_sound(snLanding, 4, false)
 	}
-	image_speed = 1;
+	if drug image_speed = 0.5;
+	else image_speed = 1;
 	if (hsp == 0)
 	{
 		if ((sprite_index == sHeroRun) and (temp == 0))

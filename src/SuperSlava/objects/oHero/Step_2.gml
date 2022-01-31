@@ -17,7 +17,15 @@ if drug && ((get_timer() mod 2) == 1)
 	}
 }
 
-if (drug_timer = 1) {drug = false; walksp = walksp*2; instance_destroy(oeCharged)}
+if (drug_timer = 1) 
+{
+	drug = false; 
+	walksp = walksp*2; 
+	instance_destroy(oeCharged);
+	jump_max = -8;
+	grv = 0.3;
+}
+
 if (drug_timer != 0) {drug_timer = drug_timer - 1}
 
 #endregion
