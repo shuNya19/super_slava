@@ -7,6 +7,7 @@ if drug && ((get_timer() mod 2) == 1)
 	shadow = instance_create_layer(x+random_range(-1,1), y+random_range(-1,1), "Shadows", oShadow)
 	with (shadow)
 	{
+		cause = "drug"
 		sprite_index = other.sprite_index
 		image_index = other.image_index
 		image_speed = 0
@@ -17,7 +18,7 @@ if drug && ((get_timer() mod 2) == 1)
 	}
 }
 
-if (drug_timer = 1) 
+if (drug_timer == 1) 
 {
 	drug = false; 
 	walksp = walksp*2; 
@@ -26,11 +27,17 @@ if (drug_timer = 1)
 	grv = 0.3;
 }
 
-if (drug_timer != 0) {drug_timer = drug_timer - 1}
+if (drug_timer != 0) {drug_timer -= 1}
 
 #endregion
 
 
 #region WEED PART
 
+if (blunt_timer == 1)
+{
+	blunt = false	
+}
+
+if (blunt_timer != 0) {blunt_timer -= 1}
 #endregion 

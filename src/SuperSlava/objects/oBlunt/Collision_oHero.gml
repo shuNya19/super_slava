@@ -1,6 +1,7 @@
 /// @description Picking up
 
 audio_play_sound(snBluntPickup,5,false)
-oCamera.blunt_used = true
+oHero.blunt = true
+oHero.blunt_timer = oHero.blunt_max
 instance_destroy()
 instance_destroy(child)

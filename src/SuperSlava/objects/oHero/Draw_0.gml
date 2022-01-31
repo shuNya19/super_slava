@@ -10,4 +10,19 @@
 //draw_self();
 //shader_reset();
 
+
+
+if blunt
+{
+	var dist = cos(((blunt_max - blunt_timer)*pi)/(2*60)+pi/2)
+	var count = 0
+	repeat (9)
+	{
+		count += 1
+		draw_sprite_ext(sprite_index, image_index, x+(count*10*dist), y, image_xscale, image_yscale, 0, c_white, 1 - (count/10))
+		draw_sprite_ext(sprite_index, image_index, x-(count*10*dist), y, image_xscale, image_yscale, 0, c_white, 1 - (count/10))
+	}
+}
+
+
 draw_self()
