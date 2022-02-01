@@ -1,21 +1,37 @@
 key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space) or keyboard_check(ord("W"));
+key_sprint = keyboard_check_pressed(vk_control)
 
 var move = key_right - key_left;
 
 hsp = move * walksp;
 
-vsp = vsp + grv;
+if not sprinting vsp = vsp + grv;
 
-if (place_meeting(x, y+1, oWall)) && (key_jump)
+if key_sprint and not sprinting
+{
+	sprinting = true
+	sprint_timer = 35
+	x_start = x
+	vsp = 0
+}
+
+if sprinting
+{
+	x = x_start + image_xscale*(-100)/((sprint_timer)-50)
+	sprint_timer +=0.5
+	if (sprint_timer == 50) sprinting = false
+}
+
+if (place_meeting(x, y+1, oWall)) && (key_jump) && not sprinting
 {
 	vsp = jump_max;
 	audio_play_sound(snJump,10,false)
 	instance_create_layer(x,bbox_bottom,"Particles",oeJump)
 }
 
-if (place_meeting(x+hsp, y, oWall))
+if (place_meeting(x+hsp, y, oWall)) && not sprinting
 {
 	while (!place_meeting(x+sign(hsp), y, oWall))
 	{
@@ -27,7 +43,7 @@ if (place_meeting(x+hsp, y, oWall))
 x = x + hsp;
 
 
-if (place_meeting(x, y+vsp, oWall))
+if (place_meeting(x, y+vsp, oWall)) && not sprinting
 {
 	var check_block = instance_place(x, y+vsp, oBlock)
 	var check_secret = instance_place(x, y+vsp, oSecret)
@@ -52,17 +68,17 @@ if (place_meeting(x, y+vsp, oWall))
 	}
 }
 
-y = y + vsp;
+if not sprinting y = y + vsp;
 
 //Animation
 
-if (!place_meeting(x,y+1,oWall))
+if (!place_meeting(x,y+1,oWall)) && not sprinting
 {
 	sprite_index = sHeroJump;
 	image_speed = 0;
 	if (sign(vsp) > 0) image_index = 1; else image_index = 0;
 }
-else
+else if not sprinting
 {
 	if (sprite_index == sHeroJump) 
 	{
