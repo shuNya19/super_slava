@@ -9,6 +9,8 @@ hsp = move * walksp;
 
 if not sprinting vsp = vsp + grv;
 
+
+
 if key_sprint and not sprinting
 {
 	sprinting = true
@@ -17,12 +19,28 @@ if key_sprint and not sprinting
 	vsp = 0
 }
 
+
+
 if sprinting
 {
-	x = x_start + image_xscale*(-100)/((sprint_timer)-50)
-	sprint_timer +=0.5
-	if (sprint_timer == 50) sprinting = false
+	if (place_meeting(x_start + image_xscale*(-100)/((sprint_timer)-50), y, oWall))
+	{
+		while (!place_meeting(x+image_xscale, y, oWall))
+		{
+			x = x + image_xscale;
+		}
+		sprinting = false
+	}
+	else
+	{
+		x = x_start + image_xscale*(-100)/((sprint_timer)-50)
+		sprint_timer +=0.5
+		if (sprint_timer == 50) sprinting = false
+	}
 }
+
+
+
 
 if (place_meeting(x, y+1, oWall)) && (key_jump) && not sprinting
 {
@@ -30,6 +48,7 @@ if (place_meeting(x, y+1, oWall)) && (key_jump) && not sprinting
 	audio_play_sound(snJump,10,false)
 	instance_create_layer(x,bbox_bottom,"Particles",oeJump)
 }
+
 
 if (place_meeting(x+hsp, y, oWall)) && not sprinting
 {

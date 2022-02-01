@@ -19,9 +19,11 @@ if blunt
 	repeat (9)
 	{
 		count += 1
-		draw_sprite_ext(sprite_index, image_index, x+(count*10*dist), y, image_xscale, image_yscale, 0, c_white, 1 - (count/10))
-		draw_sprite_ext(sprite_index, image_index, x-(count*10*dist), y, image_xscale, image_yscale, 0, c_white, 1 - (count/10))
+		draw_sprite_ext(sprite_index, image_index, x+((9-count)*10*dist), y, image_xscale, image_yscale, 0, c_white, 1 - ((9-count)/10))
+		draw_sprite_ext(sprite_index, image_index, x-((9-count)*10*dist), y, image_xscale, image_yscale, 0, c_white, 1 - ((9-count)/10))
 	}
+	audio_sound_pitch(snBlunt, 0.8)
+	if dist == 0 audio_play_sound(snBlunt, 2, false)
 }
 
 
