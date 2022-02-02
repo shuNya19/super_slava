@@ -37,12 +37,13 @@ if sprinting
 		{
 			while c*16 < abs(step-x)
 			{
-				if (place_meeting(x+16*c, y, oWall))
+				if (place_meeting(x+image_xscale*16*c, y, oWall))
 				{
 					while (!place_meeting(x+image_xscale, y, oWall))
 					{
 						x = x + image_xscale;
 					}
+					make_shadows(abs(step - x))
 					sprinting = false
 				}
 				c += 1
@@ -54,6 +55,7 @@ if sprinting
 			{
 				x = x + image_xscale;
 			}
+			make_shadows(abs(step - x))
 			sprinting = false
 		}
 	}
@@ -174,4 +176,4 @@ else if not sprinting
 	}
 }
 
-if (hsp != 0) image_xscale = sign(hsp);
+if (hsp != 0) && (not sprinting) image_xscale = sign(hsp);
