@@ -9,35 +9,64 @@ hsp = move * walksp;
 
 if not sprinting vsp = vsp + grv;
 
-
+#region DASH
 
 if key_sprint and not sprinting
 {
+	shadows_made = 1
 	sprinting = true
 	sprint_timer = 35
 	x_start = x
 	vsp = 0
+	if sprite_index != sHeroJump
+	{
+		image_speed = 0
+		sprite_index = sHeroRun
+		image_index = 5
+	}
 }
-
 
 
 if sprinting
 {
-	if (place_meeting(x_start + image_xscale*(-100)/((sprint_timer)-50), y, oWall))
+	var c = 1
+	step = x_start + image_xscale*(-100)/((sprint_timer)-50) 
+	if (sprint_timer < 50)
 	{
-		while (!place_meeting(x+image_xscale, y, oWall))
+		if abs(step - x) > 16
 		{
-			x = x + image_xscale;
+			while c*16 < abs(step-x)
+			{
+				if (place_meeting(x+16*c, y, oWall))
+				{
+					while (!place_meeting(x+image_xscale, y, oWall))
+					{
+						x = x + image_xscale;
+					}
+					sprinting = false
+				}
+				c += 1
+			}
 		}
-		sprinting = false
+		if (place_meeting(step, y, oWall))
+		{
+			while (!place_meeting(x+image_xscale, y, oWall))
+			{
+				x = x + image_xscale;
+			}
+			sprinting = false
+		}
 	}
-	else
+	if sprinting
 	{
-		x = x_start + image_xscale*(-100)/((sprint_timer)-50)
-		sprint_timer +=0.5
-		if (sprint_timer == 50) sprinting = false
+		if (sprint_timer < 50) x = step
+		if sprint_timer == 49.5 sprint_timer += 1
+		else sprint_timer += 0.5
+		if (sprint_timer == 40) audio_play_sound(snDash, 2, false)
+		if (sprint_timer == 54) sprinting = false
 	}
 }
+#endregion
 
 
 

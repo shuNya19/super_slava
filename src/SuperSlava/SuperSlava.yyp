@@ -3,6 +3,7 @@
     {"id":{"name":"oHero","path":"objects/oHero/oHero.yy",},"order":0,},
     {"id":{"name":"snSphere","path":"sounds/snSphere/snSphere.yy",},"order":9,},
     {"id":{"name":"__init_background","path":"scripts/__init_background/__init_background.yy",},"order":0,},
+    {"id":{"name":"snDash","path":"sounds/snDash/snDash.yy",},"order":11,},
     {"id":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"order":14,},
     {"id":{"name":"sBlock","path":"sprites/sBlock/sBlock.yy",},"order":11,},
     {"id":{"name":"snFoot1","path":"sounds/snFoot1/snFoot1.yy",},"order":0,},

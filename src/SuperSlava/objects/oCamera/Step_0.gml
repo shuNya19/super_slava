@@ -11,7 +11,7 @@ if (instance_exists(follow))
 if oHero.blunt
 {
 	var dist = abs(cos(((oHero.blunt_max - oHero.blunt_timer)*pi)/(2*60)+pi/2))
-  	camera_set_view_size(cam, view_w_half_start*2*(1-dist/2), view_h_half_start*2*(1-dist/2))
+  	camera_set_view_size(cam, view_w_half_start*2*(1-dist/4), view_h_half_start*2*(1-dist/4))
 	view_w_half = camera_get_view_width(cam)*0.5
 	view_h_half = camera_get_view_height(cam)*0.5
 }
