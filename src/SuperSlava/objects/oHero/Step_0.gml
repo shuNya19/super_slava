@@ -64,7 +64,7 @@ if sprinting
 		if (sprint_timer < 50) x = step
 		if sprint_timer == 49.5 sprint_timer += 1
 		else sprint_timer += 0.5
-		if (sprint_timer == 45) audio_play_sound(snDash, 2, false)
+		if (sprint_timer == 43) audio_play_sound(snDash, 2, false)
 		if (sprint_timer == 54) sprinting = false
 	}
 }
