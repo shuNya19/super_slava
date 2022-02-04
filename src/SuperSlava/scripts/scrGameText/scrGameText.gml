@@ -18,7 +18,7 @@ switch(_text_id){
 			break;
 
 	case "npc 2":
-		scr_text("Bro, sorry, got to more weed for now")
+		scr_text("Bro, sorry, got to more weed for now. Got some drugs. Also I have new Alyekin book. Wanna take a peak?")
 		scr_text("Come back next Monday")
 		break;
 		
