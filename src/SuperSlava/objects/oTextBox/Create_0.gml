@@ -4,7 +4,7 @@ textbox_height = 64;
 border = 10;
 line_sep = 10;
 line_width = textbox_width - border*2;
-txtb_spr = sNineSlice;
+txtb_spr[0] = sNineSlice;
 txtb_img = 0;
 txtb_img_spd = 6/60;
 

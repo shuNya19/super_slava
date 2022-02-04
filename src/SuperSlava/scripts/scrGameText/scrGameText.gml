@@ -4,17 +4,20 @@ function scr_game_text(_text_id){
 switch(_text_id){
 
 	case "npc 1":
-		scr_text("Yooooo Man! I'm NPC 1.")
-		scr_text("Got something new?")
+		scr_text("Yooooo Man! I'm the purple kid.", "purple kid")
+		scr_text("Yeah, i see.", "green kid", -1)
+		scr_text("You look sad, bruh.", "purple kid")
+		scr_text("Guess it is just a period.", "green kid", -1)
+		scr_text("Got something new?", "purple kid")
 			scr_option("Yeah", "npc 1 - yes")
 			scr_option("Nah", "npc 1 - no")
 		break;
 		case "npc 1 - yes":
-			scr_text("Spit it out, kid!")
+			scr_text("Spit it out, kid!", "purple kid")
 			break;
 			
 		case "npc 1 - no":
-			scr_text("Okey.")
+			scr_text("Okey.", "purple kid")
 			break;
 
 	case "npc 2":
