@@ -1,7 +1,7 @@
 accept_key = keyboard_check_pressed(vk_space);
 
 textbox_x = camera_get_view_x(view_camera[0]);
-textbox_y = camera_get_view_y(view_camera[0])+144;
+textbox_y = camera_get_view_y(view_camera[0])+136;
 
 //---------------setup---------------//
 if setup == false
@@ -83,12 +83,36 @@ if setup == false
 
 
 //---------------typing the text---------------//
-if draw_char < text_length[page]
+if text_pause_timer <= 0
 {
-	draw_char += text_spd;
-	draw_char = clamp(draw_char, 0, text_length[page]);
+	if draw_char < text_length[page]
+	{
+		draw_char += text_spd;
+		draw_char = clamp(draw_char, 0, text_length[page]);
+		var _check_char = string_char_at(text[page], draw_char)
+		if _check_char == "." || _check_char == "!" || _check_char == "?" || _check_char == ","
+		{
+			text_pause_timer = text_pause_time	
+		}
+		else
+		{
+			if snd_count < snd_delay
+			{
+				snd_count ++;	
+			}
+			else
+			{
+				snd_count = 0;
+				audio_stop_sound(snd[page])
+				audio_play_sound(snd[page], 8, false)
+			}
+		}
+	}
 }
-
+else
+{
+	text_pause_timer --;	
+}
 //---------------flip through pages---------------//
 if accept_key
 {
@@ -135,7 +159,7 @@ if speaker_sprite[page] != noone
 	var _speaker_x = textbox_x + portrait_x_offset[page];
 	if speaker_side[page] == -1 {_speaker_x += sprite_width};
 	//draw the speaker
-	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, 1);
+	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, (sprite_width+8)/txtb_spr_w, (sprite_height+8)/txtb_spr_h, 0, c_white, 1);
 	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, speaker_side[page], 1, 0, c_white, 1);
 }
 // back of the textbox
@@ -174,5 +198,31 @@ if draw_char == text_length[page] && page == page_number - 1
 //---------------draw the text---------------//
 for (var c = 0; c < draw_char; c ++)
 {
-	draw_text_color(char_x[c, page], char_y[c,page], char[c, page], c_white, c_white, c_white, c_white, 1)	
+	//waving text
+	var _float_y = 0;
+	if float_text[c, page] == true
+	{
+		float_dir[c, page] += -6;
+		_float_y = dsin(float_dir[c, page]);
+	}
+	//shake text
+	var _shake_x = 0;
+	var _shake_y = 0;
+	if shake_text[c, page] == true
+	{
+		shake_timer[c,page]--;
+		if shake_timer[c, page] <= 0
+		{
+			shake_timer[c, page] = irandom_range(4, 8);
+			shake_dir[c, page] = irandom(360);
+		}
+		if shake_timer[c, page] <= 2
+		{
+			_shake_x = lengthdir_x(1, shake_dir[c, page])
+			_shake_y = lengthdir_y(1, shake_dir[c, page])	
+		}
+		
+	}
+	
+	draw_text_color(char_x[c, page]+_shake_x, char_y[c,page] + _float_y + _shake_y, char[c, page], col_1[c,page], col_2[c,page], col_3[c,page], col_4[c,page], 1)	
 }

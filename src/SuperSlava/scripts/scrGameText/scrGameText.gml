@@ -4,7 +4,9 @@ function scr_game_text(_text_id){
 switch(_text_id){
 
 	case "npc 1":
-		scr_text("Yooooo Man! I'm the purple kid.", "purple kid")
+		scr_text("Yooooo Man! I'm the purple kid. Understand?", "purple kid")
+			scr_text_color(20, 29, c_fuchsia, c_purple, c_fuchsia, c_white); scr_text_color(31, 42, c_red, c_red, c_black, c_black);
+			scr_text_shake(0,6);
 		scr_text("Yeah, i see.", "green kid", -1)
 		scr_text("You look sad, bruh.", "purple kid")
 		scr_text("Guess it is just a period.", "green kid", -1)
