@@ -83,7 +83,7 @@ if setup == false
 
 
 //---------------typing the text---------------//
-if text_pause_timer <= 0
+if text_pause_timer <= 0 and pause_text_timer[draw_char, page] <= 0
 {
 	if draw_char < text_length[page]
 	{
@@ -94,21 +94,35 @@ if text_pause_timer <= 0
 		{
 			text_pause_timer = text_pause_time	
 		}
-		if snd_count < snd_delay
+		if pause_text[draw_char, page] == true
 		{
-			snd_count ++;	
+			pause_text_timer[draw_char, page] = pause_text_max[draw_char, page]
 		}
 		else
 		{
-			snd_count = 0;
-			audio_stop_sound(snd[page])
-			audio_play_sound(snd[page], 8, false)
+			if snd_count < snd_delay
+			{
+				snd_count += text_spd[draw_char, page]*1.5;	
+			}
+			else
+			{
+				snd_count = 0;
+				audio_stop_sound(snd[page])
+				audio_play_sound(snd[page], 8, false)
+			}
 		}
 	}
 }
 else
 {
-	text_pause_timer --;	
+	if pause_text_timer[draw_char, page] != 0
+	{
+		pause_text_timer[draw_char, page] --;	
+	}
+	else
+	{
+		text_pause_timer --;
+	}
 }
 //---------------flip through pages---------------//
 if accept_key

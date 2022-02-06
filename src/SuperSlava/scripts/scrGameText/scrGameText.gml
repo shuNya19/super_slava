@@ -24,12 +24,15 @@ switch(_text_id){
 
 	case "campfire":
 		scr_text("I guess this is it. This is the end of my endless journey... The goal seems more unreachable than ever before. Every time I hope, than I dissapoint, than spend months finding new hope, new beacon...")
-			scr_text_color(42, 49, c_yellow, c_yellow, c_white, c_white);
-			scr_text_speed(42, 57, 0.25)
+			scr_text_color(42, 49, c_yellow, c_yellow, c_white, c_white); scr_text_color(81, 92, c_white, c_white, c_gray, c_gray);
+			scr_text_speed(42, 57, 0.10)
+			scr_text_speed(81, 92, 0.25)
 		scr_text("*campfire crackling*")
 			scr_text_float(0,19);
+			scr_text_color(0,19, c_red, c_orange, c_white, c_yellow);
 		scr_text("Do i realy need all this path? Am I brave enough to make it to the end succesfully?... I don't know.")
 			scr_text_shake(87,100);
+			scr_text_pause(87, 88, 16); scr_text_pause(89, 90, 16); scr_text_pause(95, 96, 16);
 		scr_text("...")
 		break;
 		

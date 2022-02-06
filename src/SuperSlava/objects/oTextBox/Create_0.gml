@@ -17,7 +17,8 @@ char[0, 0] = "";
 char_x[0, 0] = 0;
 char_y[0, 0] = 0;
 draw_char = 0;
-text_spd[0, 0] = 1;
+default_text_spd = 0.5;
+text_spd[0, 0] = default_text_spd;
 //options
 option[0] = "";
 option_link_id[0] = -1;

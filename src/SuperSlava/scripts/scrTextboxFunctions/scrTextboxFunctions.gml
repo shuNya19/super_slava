@@ -18,7 +18,11 @@ function scr_set_defaults_for_text() {
 		shake_dir[c, page_number] = irandom(360);
 		shake_timer[c, page_number] = irandom(4);
 		
-		text_spd[c, page_number] = 1;
+		text_spd[c, page_number] = default_text_spd;
+		
+		pause_text[c, page_number] = false;
+		pause_text_max[c, page_number] = 0;
+		pause_text_timer[c, page_number] = 0;
 	}
 	
 	txtb_spr[page_number] = sNineSlice;
@@ -77,6 +81,16 @@ function scr_text_speed(_start, _end, _speed){
 	}
 }
 
+/// @param 1st_char
+/// @param last char
+/// @param pause
+function scr_text_pause(_start, _end, _pause){
+	for (var c = _start; c <= _end; c++)
+	{
+		pause_text[c, page_number-1] = true;
+		pause_text_max[c, page_number-1] = _pause;	
+	}
+}
 
 
 /// @param text
