@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 2,
-  "bbox_right": 54,
+  "bbox_left": 0,
+  "bbox_right": 48,
   "bbox_top": 0,
-  "bbox_bottom": 60,
+  "bbox_bottom": 71,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 49,
+  "height": 72,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,18 +24,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"67c7337d-595e-4fe5-b670-0e125c218758","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"67c7337d-595e-4fe5-b670-0e125c218758","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"LayerId":{"name":"4daaf67a-c7a8-4335-b4fd-e889e4a7cfe7","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sHeroSpeak","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","name":"67c7337d-595e-4fe5-b670-0e125c218758","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3c48446c-f5ef-487a-aac2-889103c430a6","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3c48446c-f5ef-487a-aac2-889103c430a6","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"LayerId":{"name":"4daaf67a-c7a8-4335-b4fd-e889e4a7cfe7","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sHeroSpeak","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","name":"3c48446c-f5ef-487a-aac2-889103c430a6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3dca5e7f-0d40-44ed-8748-fe7c2a7cca60","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3dca5e7f-0d40-44ed-8748-fe7c2a7cca60","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"LayerId":{"name":"be1693a3-2739-4d01-af31-084f683ca2a2","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sHeroSpeak","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","name":"3dca5e7f-0d40-44ed-8748-fe7c2a7cca60","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"58c617ce-c115-44d3-bef1-a718f1806ec5","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"58c617ce-c115-44d3-bef1-a718f1806ec5","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"LayerId":{"name":"be1693a3-2739-4d01-af31-084f683ca2a2","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sHeroSpeak","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","name":"58c617ce-c115-44d3-bef1-a718f1806ec5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sHeroSpeak","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 2.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fbf44fc7-a401-414c-ae2d-b56b4712ee8b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"67c7337d-595e-4fe5-b670-0e125c218758","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"2374ceca-062b-4a9e-8e5d-437411c28bc0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c48446c-f5ef-487a-aac2-889103c430a6","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7f4f985d-b2ac-4362-9f14-83adda9a90e2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3dca5e7f-0d40-44ed-8748-fe7c2a7cca60","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3dc80554-5b7c-4832-b048-43e66b5af27f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58c617ce-c115-44d3-bef1-a718f1806ec5","path":"sprites/sHeroSpeak/sHeroSpeak.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -69,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4daaf67a-c7a8-4335-b4fd-e889e4a7cfe7","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"be1693a3-2739-4d01-af31-084f683ca2a2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

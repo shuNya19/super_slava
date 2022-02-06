@@ -156,11 +156,12 @@ if speaker_sprite[page] != noone
 {
 	sprite_index = speaker_sprite[page];
 	if draw_char == text_length[page] {image_index = 0}
-	var _speaker_x = textbox_x + portrait_x_offset[page];
+	var _speaker_x = textbox_x + (textbox_height-sprite_width )/2 + portrait_x_offset[page];
+	var _speaker_y = textbox_y + (textbox_height-sprite_height)/2;
 	if speaker_side[page] == -1 {_speaker_x += sprite_width};
 	//draw the speaker
 	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, (textbox_height)/txtb_spr_w, (textbox_height)/txtb_spr_h, 0, c_white, 1);
-	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, speaker_side[page], 1, 0, c_white, 1);
+	draw_sprite_ext(sprite_index, image_index, _speaker_x, _speaker_y, speaker_side[page], 1, 0, c_white, 1);
 }
 // back of the textbox
 draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1);
