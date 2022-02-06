@@ -24,8 +24,11 @@ if oHero.blunt_timer == 1
 #endregion
 
 //Update object pos
-x += (xTo - x) / 15
-y += (yTo - y) / 15
+if not oHero.event_is_playing
+{
+	x += (xTo - x) / 15
+	y += (yTo - y) / 15
+}
 
 x = clamp(x, view_w_half, room_width-view_w_half)
 y = clamp(y, view_h_half, room_height-view_h_half)

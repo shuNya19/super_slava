@@ -22,6 +22,7 @@
     {"id":{"name":"snFoot3","path":"sounds/snFoot3/snFoot3.yy",},"order":2,},
     {"id":{"name":"oSecret","path":"objects/oSecret/oSecret.yy",},"order":3,},
     {"id":{"name":"sh_aberration","path":"shaders/sh_aberration/sh_aberration.yy",},"order":0,},
+    {"id":{"name":"scrHeroFunctions","path":"scripts/scrHeroFunctions/scrHeroFunctions.yy",},"order":2,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":2,},
     {"id":{"name":"r_test_dialogu","path":"rooms/r_test_dialogu/r_test_dialogu.yy",},"order":3,},
     {"id":{"name":"sTextboxArrow","path":"sprites/sTextboxArrow/sTextboxArrow.yy",},"order":9,},

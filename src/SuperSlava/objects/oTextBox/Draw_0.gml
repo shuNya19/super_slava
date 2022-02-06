@@ -25,7 +25,7 @@ if setup == false
 		}
 		if speaker_sprite[p] == noone 
 		{
-			text_x_offset[p] = 44;
+			text_x_offset[p] = 112;
 		}
 		
 		for (var c = 0; c < text_length[p]; c++)
@@ -87,25 +87,22 @@ if text_pause_timer <= 0
 {
 	if draw_char < text_length[page]
 	{
-		draw_char += text_spd;
+		draw_char += text_spd[draw_char, page];
 		draw_char = clamp(draw_char, 0, text_length[page]);
 		var _check_char = string_char_at(text[page], draw_char)
 		if _check_char == "." || _check_char == "!" || _check_char == "?" || _check_char == ","
 		{
 			text_pause_timer = text_pause_time	
 		}
+		if snd_count < snd_delay
+		{
+			snd_count ++;	
+		}
 		else
 		{
-			if snd_count < snd_delay
-			{
-				snd_count ++;	
-			}
-			else
-			{
-				snd_count = 0;
-				audio_stop_sound(snd[page])
-				audio_play_sound(snd[page], 8, false)
-			}
+			snd_count = 0;
+			audio_stop_sound(snd[page])
+			audio_play_sound(snd[page], 8, false)
 		}
 	}
 }

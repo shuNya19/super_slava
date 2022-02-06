@@ -17,6 +17,8 @@ function scr_set_defaults_for_text() {
 		shake_text[c, page_number] = 0;
 		shake_dir[c, page_number] = irandom(360);
 		shake_timer[c, page_number] = irandom(4);
+		
+		text_spd[c, page_number] = 1;
 	}
 	
 	txtb_spr[page_number] = sNineSlice;
@@ -65,6 +67,16 @@ function scr_text_shake(_start, _end){
 	}
 }
 
+/// @param 1st_char
+/// @param last char
+/// @param speed
+function scr_text_speed(_start, _end, _speed){
+	for (var c = _start; c <= _end; c++)
+	{
+		text_spd[c, page_number-1] = _speed;	
+	}
+}
+
 
 
 /// @param text
@@ -81,13 +93,13 @@ if argument_count > 1
 	switch (argument[1])
 	{
 		case "purple kid":
-		txtb_spr[page_number] = sNineSlicesRed;
+		txtb_spr[page_number] = sNineSlice;
 		speaker_sprite[page_number] = sHeroSpeak;
 		snd[page_number] = snDialogueTwo;
 			break;
 			
 		case "green kid":
-		txtb_spr[page_number] = sNineSlicesGreen;
+		txtb_spr[page_number] = sNineSlice;
 		speaker_sprite[page_number] = sHeroSpeakGreen;
 		snd[page_number] = snDialogueOne;
 			break;

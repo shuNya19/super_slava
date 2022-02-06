@@ -4,7 +4,7 @@ function scr_game_text(_text_id){
 switch(_text_id){
 
 	case "npc 1":
-		scr_text("Yooooo Man! I'm the purple kid. Understand?", "purple kid")
+		scr_text("Yooooo Man!!! I'm the purple kid. Understand?", "purple kid")
 			scr_text_color(20, 29, c_fuchsia, c_purple, c_fuchsia, c_white); scr_text_color(31, 42, c_red, c_red, c_black, c_black);
 			scr_text_float(0,6);
 		scr_text("Yeah, i see.", "green kid", -1)
@@ -22,9 +22,15 @@ switch(_text_id){
 			scr_text("Okey.", "purple kid")
 			break;
 
-	case "npc 2":
-		scr_text("Bro, sorry, got to more weed for now. Got some drugs. Also I have new Alyekin book. Wanna take a peak?")
-		scr_text("Come back next Monday")
+	case "campfire":
+		scr_text("I guess this is it. This is the end of my endless journey... The goal seems more unreachable than ever before. Every time I hope, than I dissapoint, than spend months finding new hope, new beacon...")
+			scr_text_color(42, 49, c_yellow, c_yellow, c_white, c_white);
+			scr_text_speed(42, 57, 0.25)
+		scr_text("*campfire crackling*")
+			scr_text_float(0,19);
+		scr_text("Do i realy need all this path? Am I brave enough to make it to the end succesfully?... I don't know.")
+			scr_text_shake(87,100);
+		scr_text("...")
 		break;
 		
 	case "npc 3":

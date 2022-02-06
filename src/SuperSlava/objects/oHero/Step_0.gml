@@ -5,7 +5,7 @@ key_sprint = keyboard_check_pressed(vk_control)
 
 var move = key_right - key_left;
 
-if not event_is_playing hsp = move * walksp;
+if not event_is_playing and not sprinting hsp = move * walksp;
 
 if not sprinting and not event_is_playing vsp = vsp + grv;
 
@@ -90,7 +90,7 @@ if (place_meeting(x+hsp, y, oWall)) && not sprinting && not event_is_playing
 	hsp = 0;
 }
 
-x = x + hsp;
+if not sprinting x = x + hsp;
 
 
 if (place_meeting(x, y+vsp, oWall)) && not sprinting && not event_is_playing
