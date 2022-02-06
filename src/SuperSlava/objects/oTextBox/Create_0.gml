@@ -1,6 +1,6 @@
 // textbox params
-textbox_width = 192;
-textbox_height = 72;
+textbox_width = 256;
+textbox_height = 80;
 border = 10;
 line_sep = 10;
 line_width = textbox_width - border*2;
@@ -29,6 +29,8 @@ setup = false;
 //sound
 snd_delay = 4;
 snd_count = snd_delay;
+text_x_offset[0] = 88;
+portrait_x_offset[0] = 8;
 
 //effects
 scr_set_defaults_for_text();

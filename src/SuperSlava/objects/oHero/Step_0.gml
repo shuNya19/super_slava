@@ -5,13 +5,13 @@ key_sprint = keyboard_check_pressed(vk_control)
 
 var move = key_right - key_left;
 
-hsp = move * walksp;
+if not event_is_playing hsp = move * walksp;
 
-if not sprinting vsp = vsp + grv;
+if not sprinting and not event_is_playing vsp = vsp + grv;
 
 #region DASH
 
-if key_sprint and not sprinting
+if key_sprint and not sprinting and not event_is_playing
 {
 	shadows_made = 1
 	sprinting = true
@@ -73,7 +73,7 @@ if sprinting
 
 
 
-if (place_meeting(x, y+1, oWall)) && (key_jump) && not sprinting
+if (place_meeting(x, y+1, oWall)) && (key_jump) && not sprinting && not event_is_playing
 {
 	vsp = jump_max;
 	audio_play_sound(snJump,10,false)
@@ -81,7 +81,7 @@ if (place_meeting(x, y+1, oWall)) && (key_jump) && not sprinting
 }
 
 
-if (place_meeting(x+hsp, y, oWall)) && not sprinting
+if (place_meeting(x+hsp, y, oWall)) && not sprinting && not event_is_playing
 {
 	while (!place_meeting(x+sign(hsp), y, oWall))
 	{
@@ -93,7 +93,7 @@ if (place_meeting(x+hsp, y, oWall)) && not sprinting
 x = x + hsp;
 
 
-if (place_meeting(x, y+vsp, oWall)) && not sprinting
+if (place_meeting(x, y+vsp, oWall)) && not sprinting && not event_is_playing
 {
 	var check_block = instance_place(x, y+vsp, oBlock)
 	var check_secret = instance_place(x, y+vsp, oSecret)
@@ -118,17 +118,17 @@ if (place_meeting(x, y+vsp, oWall)) && not sprinting
 	}
 }
 
-if not sprinting y = y + vsp;
+if not sprinting and not event_is_playing y = y + vsp;
 
 //Animation
 
-if (!place_meeting(x,y+1,oWall)) && not sprinting
+if (!place_meeting(x,y+1,oWall)) && not sprinting && not event_is_playing
 {
 	sprite_index = sHeroJump;
 	image_speed = 0;
 	if (sign(vsp) > 0) image_index = 1; else image_index = 0;
 }
-else if not sprinting
+else if not sprinting and not event_is_playing
 {
 	if (sprite_index == sHeroJump) 
 	{
@@ -176,4 +176,4 @@ else if not sprinting
 	}
 }
 
-if (hsp != 0) && (not sprinting) image_xscale = sign(hsp);
+if (hsp != 0) && (not sprinting) && (not event_is_playing) image_xscale = sign(hsp);

@@ -62,6 +62,7 @@
     {"id":{"name":"sMainFont","path":"sprites/sMainFont/sMainFont.yy",},"order":1,},
     {"id":{"name":"snBreakingBlock","path":"sounds/snBreakingBlock/snBreakingBlock.yy",},"order":6,},
     {"id":{"name":"oBlockPart","path":"objects/oBlockPart/oBlockPart.yy",},"order":8,},
+    {"id":{"name":"sTestGUI","path":"sprites/sTestGUI/sTestGUI.yy",},"order":22,},
     {"id":{"name":"sHeroGun","path":"sprites/sHeroGun/sHeroGun.yy",},"order":15,},
     {"id":{"name":"snSecretFound","path":"sounds/snSecretFound/snSecretFound.yy",},"order":7,},
     {"id":{"name":"draw_background","path":"scripts/draw_background/draw_background.yy",},"order":1,},
@@ -90,8 +91,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"r_test_dialogu","path":"rooms/r_test_dialogu/r_test_dialogu.yy",},},
     {"roomId":{"name":"r_first","path":"rooms/r_first/r_first.yy",},},
+    {"roomId":{"name":"r_test_dialogu","path":"rooms/r_test_dialogu/r_test_dialogu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [

@@ -1,7 +1,7 @@
 accept_key = keyboard_check_pressed(vk_space);
 
 textbox_x = camera_get_view_x(view_camera[0]);
-textbox_y = camera_get_view_y(view_camera[0])+136;
+textbox_y = camera_get_view_y(view_camera[0])+160;
 
 //---------------setup---------------//
 if setup == false
@@ -16,12 +16,12 @@ if setup == false
 	{
 		text_length[p] = string_length(text[p])
 		
-		text_x_offset[p] = 88;
-		portrait_x_offset[p] = 8;
+		text_x_offset[p] = 160;
+		portrait_x_offset[p] = 64;
 		if speaker_side[p] == - 1
 		{
-			text_x_offset[p] = 8;
-			portrait_x_offset[p] = 208;
+			text_x_offset[p] = 64;
+			portrait_x_offset[p] = 336;
 		}
 		if speaker_sprite[p] == noone 
 		{
@@ -159,7 +159,7 @@ if speaker_sprite[page] != noone
 	var _speaker_x = textbox_x + portrait_x_offset[page];
 	if speaker_side[page] == -1 {_speaker_x += sprite_width};
 	//draw the speaker
-	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, (sprite_width+8)/txtb_spr_w, (sprite_height+8)/txtb_spr_h, 0, c_white, 1);
+	draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, (textbox_height)/txtb_spr_w, (textbox_height)/txtb_spr_h, 0, c_white, 1);
 	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, speaker_side[page], 1, 0, c_white, 1);
 }
 // back of the textbox

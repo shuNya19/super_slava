@@ -125,7 +125,7 @@ function scr_option(_option, _link_id) {
 
 /// @param text_id
 function create_textbox(_text_id){
-with(instance_create_depth(0,0,-9999,oTextBox))
+with(instance_create_layer(0,0,"TextBoxes",oTextBox))
 	{
 		scr_game_text(_text_id);
 	}
