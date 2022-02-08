@@ -12,6 +12,7 @@
     {"id":{"name":"snFoot2","path":"sounds/snFoot2/snFoot2.yy",},"order":1,},
     {"id":{"name":"oeRunStart","path":"objects/oeRunStart/oeRunStart.yy",},"order":7,},
     {"id":{"name":"sSpeakerBlock","path":"sprites/sSpeakerBlock/sSpeakerBlock.yy",},"order":6,},
+    {"id":{"name":"scrCameraFunctions","path":"scripts/scrCameraFunctions/scrCameraFunctions.yy",},"order":3,},
     {"id":{"name":"snBlunt","path":"sounds/snBlunt/snBlunt.yy",},"order":10,},
     {"id":{"name":"sHeroRun","path":"sprites/sHeroRun/sHeroRun.yy",},"order":2,},
     {"id":{"name":"sBlockPart","path":"sprites/sBlockPart/sBlockPart.yy",},"order":6,},
@@ -124,7 +125,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.1.0.609",
+    "IDEVersion": "2022.1.1.610",
   },
   "resourceVersion": "1.4",
   "name": "SuperSlava",
