@@ -6,6 +6,7 @@ if (not oHero.drug) oHero.grv = 0.1
 if (not oHero.drug) oHero.jump_max = -5
 oHero.drug = true
 oHero.drug_timer = oHero.drug_max
+instance_create_layer(x, y , "Hero", oEffectIcon)
 if instance_exists(oeCharged) instance_destroy(oeCharged) 
 instance_create_layer(0, 0, "Shadows", oeCharged)
 instance_destroy()

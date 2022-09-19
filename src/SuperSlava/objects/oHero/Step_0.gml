@@ -2,6 +2,7 @@ key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space) or keyboard_check(ord("W"));
 key_sprint = keyboard_check_pressed(vk_control)
+key_shift = keyboard_check(vk_lshift)
 
 var move = key_right - key_left;
 
@@ -90,6 +91,8 @@ if (place_meeting(x+hsp, y, oWall)) && not sprinting && not event_is_playing
 	hsp = 0;
 }
 
+
+if key_shift hsp = hsp / 3;
 if not sprinting x = x + hsp;
 
 
