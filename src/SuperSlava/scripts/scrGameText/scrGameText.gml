@@ -30,7 +30,7 @@ switch(_text_id){
 		scr_text("*campfire crackling*")
 			scr_text_float(0,19);
 			scr_text_color(0,19, c_red, c_orange, c_white, c_yellow);
-		scr_text("Do i realy need all this path? Am I brave enough to make it to the end succesfully?... I don't know.")
+		scr_text("Do I realy need this path? Am I brave enough to make it to the end succesfully?... I don't know.")
 			scr_text_shake(87,100);
 			scr_text_pause(87, 88, 16); scr_text_pause(89, 90, 16); scr_text_pause(95, 96, 16);
 		scr_text("...")

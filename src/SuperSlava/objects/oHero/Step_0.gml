@@ -18,12 +18,6 @@ if key_sprint and not sprinting and not event_is_playing
 	sprint_timer = 35
 	x_start = x
 	vsp = 0
-	if sprite_index != sHeroJump
-	{
-		image_speed = 0
-		sprite_index = sHeroRun
-		image_index = 5
-	}
 }
 
 
@@ -66,6 +60,12 @@ if sprinting
 		else sprint_timer += 0.5
 		if (sprint_timer == 43) audio_play_sound(snDash, 2, false)
 		if (sprint_timer == 54) sprinting = false
+		if sprite_index != sHeroJump
+		{
+			image_speed = 0
+			sprite_index = sHeroRun
+			image_index = 5
+		}
 	}
 }
 #endregion

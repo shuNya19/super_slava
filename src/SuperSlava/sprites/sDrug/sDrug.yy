@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sDrug",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,48 +27,24 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"54dc5f04-b4bc-4838-bc36-99a1bcf4aa7a","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"54dc5f04-b4bc-4838-bc36-99a1bcf4aa7a","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"54dc5f04-b4bc-4838-bc36-99a1bcf4aa7a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a43b1054-6b5f-4df7-974d-1804f121139d","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a43b1054-6b5f-4df7-974d-1804f121139d","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"a43b1054-6b5f-4df7-974d-1804f121139d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7cdefec5-47a9-4e90-baf0-1e84a8872785","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7cdefec5-47a9-4e90-baf0-1e84a8872785","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"7cdefec5-47a9-4e90-baf0-1e84a8872785","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"46f66a50-fa45-42c1-b313-2c7ff9ddc748","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"46f66a50-fa45-42c1-b313-2c7ff9ddc748","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"46f66a50-fa45-42c1-b313-2c7ff9ddc748","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6f914cb7-72d2-4b80-9bb6-ea7f92c50a39","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6f914cb7-72d2-4b80-9bb6-ea7f92c50a39","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"6f914cb7-72d2-4b80-9bb6-ea7f92c50a39","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ea468617-7f36-43da-a67f-fd28d771b5a6","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ea468617-7f36-43da-a67f-fd28d771b5a6","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"ea468617-7f36-43da-a67f-fd28d771b5a6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f029aa71-0b65-469c-8445-5e883c03c45c","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f029aa71-0b65-469c-8445-5e883c03c45c","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"f029aa71-0b65-469c-8445-5e883c03c45c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"553622b5-a5c1-4f1d-a813-4bf3a97ca825","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"553622b5-a5c1-4f1d-a813-4bf3a97ca825","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"553622b5-a5c1-4f1d-a813-4bf3a97ca825","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b3da2fea-b32d-441d-ae00-1ea9e2a7ec31","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b3da2fea-b32d-441d-ae00-1ea9e2a7ec31","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"b3da2fea-b32d-441d-ae00-1ea9e2a7ec31","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9a54bd23-30c3-4355-b150-e4c7ca7f7547","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9a54bd23-30c3-4355-b150-e4c7ca7f7547","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"9a54bd23-30c3-4355-b150-e4c7ca7f7547","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2858f0e0-6ac0-4ded-8c80-ab30aa673df8","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2858f0e0-6ac0-4ded-8c80-ab30aa673df8","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"2858f0e0-6ac0-4ded-8c80-ab30aa673df8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8bd48a0e-76f7-4a83-a426-a6a06d294ab8","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8bd48a0e-76f7-4a83-a426-a6a06d294ab8","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"8bd48a0e-76f7-4a83-a426-a6a06d294ab8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bfab2d89-727c-40a0-9d5c-b3461eacb311","path":"sprites/sDrug/sDrug.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bfab2d89-727c-40a0-9d5c-b3461eacb311","path":"sprites/sDrug/sDrug.yy",},"LayerId":{"name":"c31b7352-d48e-420a-953a-d082b67535c7","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","name":"bfab2d89-727c-40a0-9d5c-b3461eacb311","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"54dc5f04-b4bc-4838-bc36-99a1bcf4aa7a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a43b1054-6b5f-4df7-974d-1804f121139d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7cdefec5-47a9-4e90-baf0-1e84a8872785",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"46f66a50-fa45-42c1-b313-2c7ff9ddc748",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6f914cb7-72d2-4b80-9bb6-ea7f92c50a39",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea468617-7f36-43da-a67f-fd28d771b5a6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f029aa71-0b65-469c-8445-5e883c03c45c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"553622b5-a5c1-4f1d-a813-4bf3a97ca825",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b3da2fea-b32d-441d-ae00-1ea9e2a7ec31",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9a54bd23-30c3-4355-b150-e4c7ca7f7547",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2858f0e0-6ac0-4ded-8c80-ab30aa673df8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8bd48a0e-76f7-4a83-a426-a6a06d294ab8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bfab2d89-727c-40a0-9d5c-b3461eacb311",},
   ],
   "sequence": {
-    "spriteId": {"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sDrug",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 8.0,
@@ -76,7 +55,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b5b0a14b-a5c8-45f2-94e1-a44cb356f504","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"54dc5f04-b4bc-4838-bc36-99a1bcf4aa7a","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"66724cd4-26e5-4429-a352-b32b97c349a3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a43b1054-6b5f-4df7-974d-1804f121139d","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1c468cbf-7ea1-4873-b5a1-b97c6c5c989b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7cdefec5-47a9-4e90-baf0-1e84a8872785","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -90,7 +69,7 @@
             {"id":"cd6de3f5-61e0-46a2-a738-34dadce312a1","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2858f0e0-6ac0-4ded-8c80-ab30aa673df8","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bdfdff25-91c9-4666-bb24-b64a322a73b4","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8bd48a0e-76f7-4a83-a426-a6a06d294ab8","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"cae67897-816e-4d81-9338-33bf9645fc0a","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bfab2d89-727c-40a0-9d5c-b3461eacb311","path":"sprites/sDrug/sDrug.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -106,22 +85,13 @@
     "yorigin": 12,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sDrug","path":"sprites/sDrug/sDrug.yy",},
-    "resourceVersion": "1.3",
-    "name": "sDrug",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c31b7352-d48e-420a-953a-d082b67535c7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c31b7352-d48e-420a-953a-d082b67535c7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sDrug",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

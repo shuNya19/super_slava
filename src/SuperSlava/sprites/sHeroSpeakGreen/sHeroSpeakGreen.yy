@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sHeroSpeakGreen",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c6bd8660-d666-4c34-9a19-e8eff6c8299b","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c6bd8660-d666-4c34-9a19-e8eff6c8299b","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"LayerId":{"name":"6b3ebd34-8284-4a80-b9f8-5d0a84fd51e3","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sHeroSpeakGreen","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"resourceVersion":"1.0","name":"c6bd8660-d666-4c34-9a19-e8eff6c8299b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fc32484c-1946-4bcf-9af6-3f237c12cd80","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fc32484c-1946-4bcf-9af6-3f237c12cd80","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"LayerId":{"name":"6b3ebd34-8284-4a80-b9f8-5d0a84fd51e3","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sHeroSpeakGreen","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"resourceVersion":"1.0","name":"fc32484c-1946-4bcf-9af6-3f237c12cd80","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6bd8660-d666-4c34-9a19-e8eff6c8299b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fc32484c-1946-4bcf-9af6-3f237c12cd80",},
   ],
   "sequence": {
-    "spriteId": {"name":"sHeroSpeakGreen","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sHeroSpeakGreen",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 4.0,
@@ -43,10 +44,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e5ca01d8-2f96-4cf5-80ec-880be745e258","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c6bd8660-d666-4c34-9a19-e8eff6c8299b","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"36a720eb-ac33-45f5-bd27-d4239c695f41","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc32484c-1946-4bcf-9af6-3f237c12cd80","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sHeroSpeakGreen","path":"sprites/sHeroSpeakGreen/sHeroSpeakGreen.yy",},
-    "resourceVersion": "1.3",
-    "name": "sHeroSpeakGreen",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6b3ebd34-8284-4a80-b9f8-5d0a84fd51e3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6b3ebd34-8284-4a80-b9f8-5d0a84fd51e3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Dialogue",
     "path": "folders/Dialogue.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sHeroSpeakGreen",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
