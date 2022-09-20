@@ -12,7 +12,7 @@ if not sprinting and not event_is_playing vsp = vsp + grv;
 
 #region DASH
 
-if key_sprint and not sprinting and not event_is_playing
+if key_sprint and not sprinting and not event_is_playing and sprint_cd == 0
 {
 	shadows_made = 1
 	sprinting = true
@@ -40,6 +40,7 @@ if sprinting
 					}
 					make_shadows(abs(step - x))
 					sprinting = false
+					sprint_cd = sprint_cd_max
 				}
 				c += 1
 			}
@@ -52,6 +53,7 @@ if sprinting
 			}
 			make_shadows(abs(step - x))
 			sprinting = false
+			sprint_cd = sprint_cd_max
 		}
 	}
 	if sprinting
@@ -59,8 +61,10 @@ if sprinting
 		if (sprint_timer < 50) x = step
 		if sprint_timer == 49.5 sprint_timer += 1
 		else sprint_timer += 0.5
+		// sound effect
 		if (sprint_timer == 43) audio_play_sound(snDash, 2, false)
-		if (sprint_timer == 54) sprinting = false
+		// full succesfull sprint
+		if (sprint_timer == 54) {sprinting = false; sprint_cd = sprint_cd_max}
 		if sprite_index != sHeroJump
 		{
 			image_speed = 0
@@ -91,9 +95,14 @@ if (place_meeting(x+hsp, y, oWall)) && not sprinting && not event_is_playing
 	hsp = 0;
 }
 
-
+// slow moving
 if key_shift hsp = hsp / 3;
-if not sprinting x = x + hsp;
+
+// adjusting x coord if not sprint
+if not sprinting x = x + hsp
+
+// sprint cd count
+if sprint_cd != 0 sprint_cd -= 1 
 
 
 if (place_meeting(x, y+vsp, oWall)) && not sprinting && not event_is_playing
