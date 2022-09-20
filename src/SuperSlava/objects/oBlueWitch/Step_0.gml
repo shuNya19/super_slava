@@ -12,7 +12,7 @@ x += hsp
 
 if (place_meeting(x, y+vsp, oWall))
 {
-	while (place_meeting(x, y+sign(vsp), oWall))
+	while (!place_meeting(x, y+sign(vsp), oWall))
 	{
 		y += sign(vsp);
 	}
@@ -28,6 +28,7 @@ if (!place_meeting(x, y+1, oWall))
 }
 else
 {
+	show_debug_message("here")
 	image_speed = 1;
 	if (hsp == 0)
 	{
