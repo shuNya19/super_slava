@@ -163,8 +163,7 @@ else if not sprinting and not event_is_playing
 		}
 		if (temp == 0) 
 		{
-			if (gun_equiped) sprite_index = sHeroGun;
-			else sprite_index = sHeroIdle;
+			sprite_index = sHeroIdle
 		}
 	}
 	else

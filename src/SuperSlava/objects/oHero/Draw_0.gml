@@ -35,3 +35,14 @@ if blunt
 draw_self()
 // VERSION 2
 // if not blunt draw_self()
+
+if (gun_equiped) {
+	if (sprite_index == sHeroIdle) { 
+		var sprite = sChristForIdle 
+	} else if (sprite_index == sHeroRun) { 
+		var sprite = sChristForRun 
+	} else {
+		var sprite = sChristForIdle
+	}
+	draw_sprite_ext(sprite, image_index, x, y, image_xscale, 1, 0, c_white, 1)
+}
