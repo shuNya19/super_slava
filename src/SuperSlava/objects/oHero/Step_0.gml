@@ -132,6 +132,9 @@ if (place_meeting(x, y+vsp, oWall)) && not sprinting && not event_is_playing
 
 if not sprinting and not event_is_playing y = y + vsp;
 
+
+
+
 //Animation
 
 if (!place_meeting(x,y+1,oWall)) && not sprinting && not event_is_playing
@@ -188,3 +191,24 @@ else if not sprinting and not event_is_playing
 }
 
 if (hsp != 0) && (not sprinting) && (not event_is_playing) image_xscale = sign(hsp);
+
+
+
+
+
+
+
+// ATACK
+
+
+if gun_equiped and mouse_check_button_pressed(mb_left) {
+	with instance_create_layer(x, y-8, "Particles", oCross) {
+		if (other.hsp != 0) {
+			dir = sign(other.hsp)
+		} else {
+			dir = sign(image_xscale)
+		}
+	}	
+}
+
+

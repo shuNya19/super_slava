@@ -41,8 +41,8 @@ if (gun_equiped) {
 		var sprite = sChristForIdle 
 	} else if (sprite_index == sHeroRun) { 
 		var sprite = sChristForRun 
-	} else {
-		var sprite = sChristForIdle
+	} else if (sprite_index == sHeroJump) {
+		var sprite = sChristForJump
 	}
 	draw_sprite_ext(sprite, image_index, x, y, image_xscale, 1, 0, c_white, 1)
 }
