@@ -4,6 +4,8 @@ key_jump = keyboard_check_pressed(vk_space) or keyboard_check(ord("W"));
 key_sprint = keyboard_check_pressed(vk_control)
 key_shift = keyboard_check(vk_lshift)
 
+
+
 var move = key_right - key_left;
 
 if not event_is_playing and not sprinting hsp = move * walksp;
@@ -202,13 +204,10 @@ if (hsp != 0) && (not sprinting) && (not event_is_playing) image_xscale = sign(h
 
 
 if gun_equiped and mouse_check_button_pressed(mb_left) {
-	with instance_create_layer(x, y-8, "Particles", oCross) {
-		if (other.hsp != 0) {
-			dir = sign(other.hsp)
-		} else {
-			dir = sign(image_xscale)
-		}
+	with instance_create_layer(x, y-2, "Particles", oCross) {
+		dir = sign(other.image_xscale)
 	}	
 }
+
 
 
