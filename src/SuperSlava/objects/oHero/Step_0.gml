@@ -202,8 +202,13 @@ if (hsp != 0) && (not sprinting) && (not event_is_playing) image_xscale = sign(h
 
 // ATACK
 
+if cross_count != 0 {
+	cross_count -= 1
+}
 
-if gun_equiped and mouse_check_button_pressed(mb_left) {
+
+if gun_equiped and mouse_check_button_pressed(mb_left) and cross_count == 0 {
+	cross_count = cross_count_max
 	with instance_create_layer(x, y-2, "Particles", oCross) {
 		dir = sign(other.image_xscale)
 	}	

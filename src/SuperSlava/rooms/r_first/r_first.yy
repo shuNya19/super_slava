@@ -32,6 +32,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D4FAF8D","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"skill","path":"objects/oSkillIcon/oSkillIcon.yy",},"objectId":{"name":"oSkillIcon","path":"objects/oSkillIcon/oSkillIcon.yy",},"value":"sprint",},
           ],"isDnd":false,"objectId":{"name":"oSkillIcon","path":"objects/oSkillIcon/oSkillIcon.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3B16582E","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"weapon","path":"objects/oWeaponIcon/oWeaponIcon.yy",},"objectId":{"name":"oWeaponIcon","path":"objects/oWeaponIcon/oWeaponIcon.yy",},"value":"cross",},
+          ],"isDnd":false,"objectId":{"name":"oWeaponIcon","path":"objects/oWeaponIcon/oWeaponIcon.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":96.0,},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Lost_HP","instances":[],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Shadows","instances":[],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -793,6 +796,7 @@
     {"name":"inst_1E23D17","path":"rooms/r_first/r_first.yy",},
     {"name":"inst_4ACA96DA","path":"rooms/r_first/r_first.yy",},
     {"name":"inst_4D4FAF8D","path":"rooms/r_first/r_first.yy",},
+    {"name":"inst_3B16582E","path":"rooms/r_first/r_first.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
