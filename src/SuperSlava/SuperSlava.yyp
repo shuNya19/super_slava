@@ -76,6 +76,7 @@
     {"id":{"name":"oDrug","path":"objects/oDrug/oDrug.yy",},"order":11,},
     {"id":{"name":"oCrossPart","path":"objects/oCrossPart/oCrossPart.yy",},"order":21,},
     {"id":{"name":"f_std","path":"fonts/f_std/f_std.yy",},"order":0,},
+    {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"order":23,},
     {"id":{"name":"sNineSlice","path":"sprites/sNineSlice/sNineSlice.yy",},"order":0,},
     {"id":{"name":"oWeaponIcon","path":"objects/oWeaponIcon/oWeaponIcon.yy",},"order":22,},
     {"id":{"name":"sSmoke","path":"sprites/sSmoke/sSmoke.yy",},"order":12,},

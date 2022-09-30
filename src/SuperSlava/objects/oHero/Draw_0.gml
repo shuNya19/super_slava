@@ -46,3 +46,8 @@ if (gun_equiped) {
 	}
 	draw_sprite_ext(sprite, image_index, x, y, image_xscale, 1, 0, c_white, 1)
 }
+
+if get_hit {
+	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 1, c_red, 0.5)
+	get_hit = false
+}
