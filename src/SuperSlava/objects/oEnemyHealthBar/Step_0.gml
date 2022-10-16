@@ -2,5 +2,5 @@
 // You can write your code in this editor
 
 
-x = mother.x - 17
+x = mother.x
 y = mother.y - 30

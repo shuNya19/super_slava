@@ -62,8 +62,6 @@ if spike_cd = 0 and not oHero.sprinting and (45 > abs(x_dif)) and (abs(y_dif) < 
 
 if spike_cd != 0 {spike_cd = spike_cd - 1}
 
-show_debug_message(spike_cd)
-
 #endregion
 
 

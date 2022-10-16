@@ -36,6 +36,8 @@ y = clamp(y, view_h_half+10, room_height-view_h_half-10)
 
 // DRUG 
 // shaking
+
+
 if (oHero.drug)
 {
 	var sep = oHero.drug_max / 3

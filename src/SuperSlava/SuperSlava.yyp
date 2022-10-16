@@ -82,6 +82,7 @@
     {"id":{"name":"sSmoke","path":"sprites/sSmoke/sSmoke.yy",},"order":12,},
     {"id":{"name":"sMainFont","path":"sprites/sMainFont/sMainFont.yy",},"order":1,},
     {"id":{"name":"snBreakingBlock","path":"sounds/snBreakingBlock/snBreakingBlock.yy",},"order":6,},
+    {"id":{"name":"sEnemySkillBar","path":"sprites/sEnemySkillBar/sEnemySkillBar.yy",},"order":40,},
     {"id":{"name":"oBlockPart","path":"objects/oBlockPart/oBlockPart.yy",},"order":8,},
     {"id":{"name":"seCrossWind","path":"sprites/seCrossWind/seCrossWind.yy",},"order":38,},
     {"id":{"name":"sSkillIconProcces","path":"sprites/sSkillIconProcces/sSkillIconProcces.yy",},"order":31,},
@@ -150,10 +151,10 @@
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
   ],
   "TextureGroups": [
-    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.8.1.37",
+    "IDEVersion": "2022.9.0.49",
   },
 }
