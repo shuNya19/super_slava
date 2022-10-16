@@ -26,8 +26,8 @@ if oHero.blunt_timer == 1
 //Update object pos
 if not oHero.event_is_playing
 {
-	x += (xTo - x) / 15
-	y += (yTo - y) / 15
+	x += (xTo - x) / 10
+	y += (yTo - y) / 10
 }
 
 

@@ -37,7 +37,7 @@ draw_self()
 // if not blunt draw_self()
 
 if (gun_equiped) {
-	if (sprite_index == sHeroIdle) { 
+	if (sprite_index == sSlavaIdle) { 
 		var sprite = sChristForIdle 
 	} else if (sprite_index == sHeroRun) { 
 		var sprite = sChristForRun 

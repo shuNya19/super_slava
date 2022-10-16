@@ -168,12 +168,12 @@ else if not sprinting and not event_is_playing
 		}
 		if (temp == 0) 
 		{
-			sprite_index = sHeroIdle
+			sprite_index = sSlavaIdle
 		}
 	}
 	else
 	{
-		if (sprite_index == sHeroIdle) or (sprite_index == sHeroGun) 
+		if (sprite_index == sSlavaIdle) or (sprite_index == sHeroGun) 
 		{
 			temp = 1;
 			instance_create_layer(x,bbox_bottom,"Particles",oeRunStart)
