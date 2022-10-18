@@ -7,3 +7,4 @@ with instance_create_layer(x, y, "Enemy", oEnemyHealthBar) {
 }
 
 hp = hp_max
+mana = mana_max

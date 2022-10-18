@@ -6,6 +6,12 @@ if floating {
 }
 
 
+if mana != mana_max and not attacking
+{
+	mana += mana_regen
+}
+
+
 // IF HIT WALL WHILE FOLLOWING
 if (place_meeting(x+hsp, y, oWall))
 {
@@ -38,9 +44,9 @@ if not floating x += hsp
 // GRAVITY
 if (place_meeting(x, y+vsp, oWall))
 {
-	while (!place_meeting(x, y+sign(vsp), oWall))
+	while (!place_meeting(x, y+sign(vsp)*0.2, oWall))
 	{
-		y += sign(vsp);
+		y += sign(vsp)*0.1;
 	}
 	vsp = 0;
 }
@@ -57,6 +63,8 @@ if spike_cd = 0 and not oHero.sprinting and (45 > abs(x_dif)) and (abs(y_dif) < 
 	spikes.image_xscale = image_xscale
 	spike_cd = spike_cd_max
 	image_index = 0
+	prev_mana = mana
+	mana = mana - spike_cost
 }
 
 

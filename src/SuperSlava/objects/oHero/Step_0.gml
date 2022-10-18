@@ -114,9 +114,9 @@ if (place_meeting(x, y+vsp, oWall)) && not sprinting && not event_is_playing
 	
 	
 	// GETTING CLOSE
-	while (!place_meeting(x, y+sign(vsp), oWall))
+	while (!place_meeting(x, y+sign(vsp)*0.2, oWall))
 	{
-		y = y + sign(vsp);
+		y = y + sign(vsp)*0.1;
 	}
 	vsp = 0;
 	
@@ -213,6 +213,3 @@ if gun_equiped and mouse_check_button_pressed(mb_left) and cross_count == 0 {
 		dir = sign(other.image_xscale)
 	}	
 }
-
-
-

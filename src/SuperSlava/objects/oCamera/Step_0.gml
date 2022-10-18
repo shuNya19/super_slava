@@ -28,6 +28,8 @@ if not oHero.event_is_playing
 {
 	x += (xTo - x) / 10
 	y += (yTo - y) / 10
+	//x = xTo
+	//y = yTo
 }
 
 
