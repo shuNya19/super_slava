@@ -56,7 +56,7 @@ y += vsp;
 
 #region ATTACK
 
-if spike_cd = 0 and not oHero.sprinting and (45 > abs(x_dif)) and (abs(y_dif) < 200) and not get_hit and not attacking {
+if spike_cd = 0 and not oHero.sprinting and (45 > abs(x_dif)) and (abs(y_dif) < 70) and not get_hit and not attacking {
 	attacking = true
 	spikes = instance_create_layer(x, y+(sprite_height)/2, "Particles", oSpikes)
 	spikes.dir = sign(image_xscale)
