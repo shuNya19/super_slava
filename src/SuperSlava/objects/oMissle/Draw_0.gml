@@ -2,11 +2,8 @@
 // You can write your code in this editor
 
 var cos_angle = (xTo - x) / sqrt(sqr(xTo - x) + sqr(yTo - y))
-
-show_debug_message(cos_angle)
-show_debug_message(xTo)
-show_debug_message(x)
-show_debug_message(yTo)
-show_debug_message(y)
-
-draw_sprite_ext(sMissle, 0, x, y, 1, 1, arccos(cos_angle), c_white, 1)
+var angle = arccos(cos_angle)*180/pi
+if yTo > y {angle = - angle}
+show_debug_message("angle:"+string(angle))
+show_debug_message("cos:"+string(cos_angle))
+draw_sprite_ext(sMissle, 0, x, y, 1, 1, angle, c_white, 1)
