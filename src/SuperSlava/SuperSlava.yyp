@@ -73,9 +73,11 @@
     {"id":{"name":"b_back","path":"sprites/b_back/b_back.yy",},"order":0,},
     {"id":{"name":"snDialogueTwo","path":"sounds/snDialogueTwo/snDialogueTwo.yy",},"order":15,},
     {"id":{"name":"__init_global","path":"scripts/__init_global/__init_global.yy",},"order":2,},
+    {"id":{"name":"oGrave","path":"objects/oGrave/oGrave.yy",},"order":25,},
     {"id":{"name":"sWitchCharge","path":"sprites/sWitchCharge/sWitchCharge.yy",},"order":28,},
     {"id":{"name":"oDrug","path":"objects/oDrug/oDrug.yy",},"order":11,},
     {"id":{"name":"oCrossPart","path":"objects/oCrossPart/oCrossPart.yy",},"order":21,},
+    {"id":{"name":"start_grave","path":"rooms/start_grave/start_grave.yy",},"order":3,},
     {"id":{"name":"f_std","path":"fonts/f_std/f_std.yy",},"order":0,},
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"order":23,},
     {"id":{"name":"sNineSlice","path":"sprites/sNineSlice/sNineSlice.yy",},"order":0,},
@@ -107,6 +109,7 @@
     {"id":{"name":"oShadow","path":"objects/oShadow/oShadow.yy",},"order":13,},
     {"id":{"name":"seJump","path":"sprites/seJump/seJump.yy",},"order":9,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
+    {"id":{"name":"sGrave","path":"sprites/sGrave/sGrave.yy",},"order":43,},
     {"id":{"name":"sSecret","path":"sprites/sSecret/sSecret.yy",},"order":5,},
     {"id":{"name":"snGunRecharge","path":"sounds/snGunRecharge/snGunRecharge.yy",},"order":8,},
     {"id":{"name":"sWitchSpikes","path":"sprites/sWitchSpikes/sWitchSpikes.yy",},"order":26,},
@@ -115,9 +118,9 @@
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
     {"name":"macOS","path":"options/mac/options_mac.yy",},
-    {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
+    {"name":"Main","path":"options/main/options_main.yy",},
   ],
   "defaultScriptType": 1,
   "isEcma": false,
@@ -129,6 +132,7 @@
     {"roomId":{"name":"r_first","path":"rooms/r_first/r_first.yy",},},
     {"roomId":{"name":"r_test_dialogu","path":"rooms/r_test_dialogu/r_test_dialogu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"start_grave","path":"rooms/start_grave/start_grave.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
@@ -158,6 +162,6 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.9.1.51",
+    "IDEVersion": "2022.11.1.56",
   },
 }
