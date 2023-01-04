@@ -30,7 +30,8 @@ setup = false;
 //sound
 snd_delay = 4;
 snd_count = snd_delay;
-text_x_offset[0] = 88;
+//text_x_offset[0] = 88;
+text_x_offset[0] = 0;
 portrait_x_offset[0] = 8;
 
 //effects
