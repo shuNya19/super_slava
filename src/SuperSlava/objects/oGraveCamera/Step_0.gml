@@ -22,17 +22,17 @@ if count == 0 {
 		audio_play_sound(sndZoom, 3, false)
 		count = 90
 	} else if grave_stage == 2 {
+		if camera_get_view_width(cam) <= 240.5 and grave_stage == 2 {
+			camera_set_view_size(cam, 240, 135)
+			grave_stage = 3
+			count = 180
+		}
 		var new_width = camera_get_view_width(cam) + (widthTo - camera_get_view_width(cam))/10
 		var new_height = camera_get_view_height(cam) + (heightTo - camera_get_view_height(cam))/10
 		camera_set_view_size(cam, new_width, new_height)
 		view_w_half = camera_get_view_width(cam) * 0.5;
 		view_h_half = camera_get_view_height(cam) * 0.5;
 		y += (yTo - y) / 10
-		if camera_get_view_width(cam) <= 240.5 and grave_stage == 2 {
-			camera_set_view_size(cam, 240, 135)
-			grave_stage = 3
-			count = 180
-		}
 	} else if grave_stage == 3 {
 		grave_stage = 4
 		audio_play_sound(sndVibrating, 2, true)

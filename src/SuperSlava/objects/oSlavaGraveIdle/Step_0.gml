@@ -14,10 +14,14 @@ if cam.grave_stage == 4 {
 	if image_xscale == 1 {
 		image_xscale = -1
 	}
-	if image_index >= 10 {
-		image_speed = 0
-	}
-	if image_index >= 11 {
+	if image_index >= 11 
+	{
 		audio_stop_all()
+	} else if image_index >= 10 
+	{
+		image_speed = 0
+		if !instance_exists(oCall) {
+			instance_create_layer(x+5, y-35, "Instances", oCall)
+		}
 	}
 }
