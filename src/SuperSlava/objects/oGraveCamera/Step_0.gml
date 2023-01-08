@@ -40,6 +40,25 @@ if count == 0 {
 	} else if grave_stage == 4 {
 		grave_stage = 5
 	}
+	if grave_stage == 6 {
+		if camera_get_view_width(cam) >= 479.5 {
+			camera_set_view_size(cam, 480, 270)
+			grave_stage = 7
+			show_debug_message("here")
+			exit
+		}
+		var new_width = camera_get_view_width(cam) + (480 - camera_get_view_width(cam))/10
+		var new_height = camera_get_view_height(cam) + (270 - camera_get_view_height(cam))/10
+		camera_set_view_size(cam, new_width, new_height)
+		view_w_half = camera_get_view_width(cam) * 0.5;
+		view_h_half = camera_get_view_height(cam) * 0.5;
+	} 
+	if grave_stage == 7
+	{
+		instance_create_layer(x,y,"UI",oDiagolue)
+		grave_stage = 8
+		show_debug_message("here")
+	}
 } else {
 	count -= 1
 }

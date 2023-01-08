@@ -7,6 +7,7 @@ if position_meeting(mouse_x, mouse_y, accept) && mouse_check_button_pressed(mb_l
 	instance_destroy(accept)
 	instance_destroy(decline)
 	audio_stop_all()
+	oGraveCamera.grave_stage = 6
 	instance_destroy()
 }
 
