@@ -1,8 +1,8 @@
 // textbox params
-textbox_width = 256;
-textbox_height = 80;
+textbox_width = 370;
+textbox_height = 70;
 border = 10;
-line_sep = 10;
+line_sep = 12;
 line_width = textbox_width - border*2;
 txtb_spr[0] = sNineSlice;
 txtb_img = 0;

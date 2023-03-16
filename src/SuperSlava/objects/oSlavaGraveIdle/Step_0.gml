@@ -9,7 +9,9 @@ if cam.grave_stage == 4 {
 		image_xscale = -1
 		audio_play_sound(sndVibrating, 2, 1)
 	}
-} else if cam.grave_stage == 5 {
+} 
+
+else if cam.grave_stage == 5 {
 	sprite_index = sSlavaPhone 
 	if image_xscale == 1 {
 		image_xscale = -1
@@ -23,5 +25,18 @@ if cam.grave_stage == 4 {
 		if !instance_exists(oCall) {
 			instance_create_layer(x+5, y-35, "Instances", oCall)
 		}
+	}
+} 
+
+else if cam.grave_stage == 8 {
+	sprite_index = sSlavaPhone
+	image_index = 11
+}
+
+else if cam.grave_stage == 9 {
+	sprite_index = sSlavaPhone
+	image_speed = -0.5
+	if image_index < 1 {
+		image_speed = 0
 	}
 }

@@ -1,1 +1,1 @@
-global.font_main = font_add_sprite(sMainFont, 32, true, 1)
+global.font_main = Font2

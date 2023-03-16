@@ -11,5 +11,6 @@ xTo = 1020
 yTo = 850
 widthTo = 240
 heightTo = 135
-count = 240
+skip = 2
+count = 0
 audio_play_sound(sndWind, 2, false, 2)

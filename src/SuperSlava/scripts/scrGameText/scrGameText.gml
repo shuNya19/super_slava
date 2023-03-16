@@ -36,9 +36,14 @@ switch(_text_id){
 		scr_text("...")
 		break;
 		
-	case "npc 3":
-		scr_text("Yo, i got some new girlz at my place")
-		scr_text("Wanna test their... skillzzz?")
+	case "zamay_first_call":
+		scr_text("Алло, Слава?", "zamay")
+		scr_text("Слава, ты?", "zamay")
+		scr_text("Слава... Я ЕБАЛ! Это пиздец какой-то", "zamay")
+		scr_text_shake(9,16);
+		scr_text("Молодой Бишкек уже три дня не выходит на связь. Я позвонил всем своим, он нигде не появлялся", "zamay")
+		scr_text("Я пока на конспиративной хате, адрес говорить не буду. Вдруг это ребята из Кремля...", "zamay")
+		scr_text("Надеюсь, ты в порядке. Заляг на дно пока что, родненький. Обнял.", "zamay")
 		break;
 }
 
