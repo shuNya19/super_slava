@@ -123,6 +123,12 @@ if argument_count > 1
 		speaker_sprite[page_number] = sZamay;
 		snd[page_number] = snDialogueOne;
 			break;
+			
+		case "slava":
+		txtb_spr[page_number] = sNineSlice;
+		speaker_sprite[page_number] = sSlavaPortrait;
+		snd[page_number] = snDialogueOne;
+			break;
 	}
 }
 

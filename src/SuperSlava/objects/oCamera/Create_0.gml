@@ -8,3 +8,6 @@ view_w_half_start = view_w_half;
 view_h_half_start = view_h_half;
 xTo = xstart;
 yTo = ystart;
+
+
+instance_create_layer(0,0,"Transition",oTransitionEnd)

@@ -20,12 +20,12 @@ if setup == false
 		portrait_x_offset[p] = 15;
 		if speaker_side[p] == - 1
 		{
-			text_x_offset[p] = 64;
-			portrait_x_offset[p] = 336;
+			text_x_offset[p] = 15;
+			portrait_x_offset[p] = 395;
 		}
 		if speaker_sprite[p] == noone 
 		{
-			text_x_offset[p] = 112;
+			text_x_offset[p] = 55;
 		}
 		
 		for (var c = 0; c < text_length[p]; c++)

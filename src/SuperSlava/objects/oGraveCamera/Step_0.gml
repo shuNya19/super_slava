@@ -85,6 +85,7 @@ if count == 0 {
 	{
 		if !instance_exists(oTextBox){
 			grave_stage = 9
+			instance_create_layer(0,0,"Transition",oTransitionStart)
 			count = 400
 		}
 	} 
