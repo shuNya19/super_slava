@@ -181,8 +181,8 @@
     {"id":{"name":"sWitchSpikes","path":"sprites/sWitchSpikes/sWitchSpikes.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"start_grave","path":"rooms/start_grave/start_grave.yy",},},
     {"roomId":{"name":"r_first","path":"rooms/r_first/r_first.yy",},},
+    {"roomId":{"name":"start_grave","path":"rooms/start_grave/start_grave.yy",},},
     {"roomId":{"name":"r_test_dialogu","path":"rooms/r_test_dialogu/r_test_dialogu.yy",},},
   ],
   "TextureGroups": [

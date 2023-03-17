@@ -10,4 +10,4 @@ xTo = xstart;
 yTo = ystart;
 
 
-instance_create_layer(0,0,"Transition",oTransitionEnd)
+instance_create_depth(0,0,-9999,oTransitionEnd)
