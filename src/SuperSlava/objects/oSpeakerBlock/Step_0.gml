@@ -1,7 +1,19 @@
-var _s = id
-if position_meeting(mouse_x, mouse_y, id) && mouse_check_button_pressed(mb_left)
-{
-	create_textbox(text_id);
-	oHero.event_is_playing = true
-	oHero.hsp = 0;
+
+if abs(oHero.x - (x+sprite_width/2)) <= 48 and oHero.bbox_bottom == bbox_bottom {
+	if !instance_exists(oInteract) and !instance_exists(oTextBox) {
+		interact = instance_create_layer(x+sprite_width/2,y,"Blocks",oInteract)
+	}
+	
+	if keyboard_check_pressed(ord("E")) {
+		instance_destroy(interact)
+		create_textbox(text_id);
+		oHero.event_is_playing = true
+		oHero.hsp = 0;
+	}
+	
+} else {
+	if instance_exists(oInteract) {
+		instance_destroy(interact)
+	}
 }
+
