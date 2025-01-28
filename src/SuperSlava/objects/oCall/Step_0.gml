@@ -4,7 +4,7 @@ if position_meeting(mouse_x, mouse_y, accept) && mouse_check_button_pressed(mb_l
 {
 	//create_textbox(text_id);
 	oSlavaGraveIdle.image_index = 11
-	object_set_visible(accept, false)
+	object_set_visible(oAccept, false)
 	instance_destroy(decline)
 	audio_stop_all()
 	oGraveCamera.grave_stage = 6

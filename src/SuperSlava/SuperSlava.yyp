@@ -35,7 +35,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"oHero","path":"objects/oHero/oHero.yy",},},
@@ -181,10 +181,11 @@
     {"id":{"name":"sWitchSpikes","path":"sprites/sWitchSpikes/sWitchSpikes.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"r_first","path":"rooms/r_first/r_first.yy",},},
     {"roomId":{"name":"start_grave","path":"rooms/start_grave/start_grave.yy",},},
+    {"roomId":{"name":"r_first","path":"rooms/r_first/r_first.yy",},},
     {"roomId":{"name":"r_test_dialogu","path":"rooms/r_test_dialogu/r_test_dialogu.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
